@@ -12,12 +12,7 @@ function Home() {
     if (name !== "") {
       setLoading(true);
       axios
-        .get(`https://api.github.com/search/users?q=${name}&per_page=5`, {
-          method: "GET",
-          headers: {
-            Authorization: "token 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",
-          },
-        })
+        .get(`https://api.github.com/search/users?q=${name}&per_page=5`)
         .then((res) => {
           setUser(res.data.items);
           setLoading(false);
@@ -27,22 +22,22 @@ function Home() {
 
   return (
     <>
-      <div class="container col-lg-12">
-        <div class="row mt-5">
-          <div class="col-lg-6">
+      <div className="container col-lg-12">
+        <div className="row mt-5">
+          <div className="col-lg-6">
             <div
-              class="logo fs-1 "
+              className="logo fs-1 "
               style={{ fontFamily: "oxygen", color: "#3D61F5" }}
             >
               Github Mini
             </div>
-            <h3 class="mt-5">Github sederhana </h3>
-            <p class="fs-5 fw-light mt-5">
+            <h3 className="mt-5">Github sederhana </h3>
+            <p className="fs-5 fw-light mt-5">
               Github mini adalah web sederhana untuk mencari dan melihat
               repository dari pengguna github dan saya gunakan untuk salah satu
               syarat tes di tebengan
             </p>
-            <div class="mt-5 col-lg-10">
+            <div className="mt-5 col-lg-10">
               <input
                 type="text"
                 className="form-control"

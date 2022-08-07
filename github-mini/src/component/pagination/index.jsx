@@ -1,5 +1,5 @@
 import {Pagination} from 'react-bootstrap';
-import { useState } from 'react';
+
 const Paginations = (props) => {
   
     return (

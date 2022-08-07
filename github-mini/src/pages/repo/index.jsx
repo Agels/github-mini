@@ -33,14 +33,7 @@ const Repo = () => {
       setLoading(true);
       axios
         .get(
-          `https://api.github.com/users/${repo}/repos?per_page=${currentPost}?sort=created&direction=desc`,
-          {
-            method: "GET",
-            headers: {
-              Authorization: "token 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",
-            },
-          }
-        )
+          `https://api.github.com/users/${repo}/repos?per_page=${currentPost}?sort=created&direction=desc`)
         .then((res) => {
           setListRepo(res.data);
           setLoading(false);

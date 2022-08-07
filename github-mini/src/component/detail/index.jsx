@@ -1,4 +1,4 @@
-import { Modal, Card, Row, Col } from "react-bootstrap";
+import { Modal, Row, Col } from "react-bootstrap";
 
 const Detail = (props) => {
   return (
@@ -11,9 +11,6 @@ const Detail = (props) => {
       <Modal.Header closeButton><h3>Detail</h3>
       </Modal.Header>
       <Modal.Body>
-        {/* <Card style={{ width: "40rem" }} className="mx-auto mt-5">
-          <Card.Header as="h5">Detail</Card.Header>
-          <Card.Body> */}
             <Row lg={12}>
               <Col lg={6}>id : </Col>
               <Col lg={6}>#{props.detail.id}</Col>
