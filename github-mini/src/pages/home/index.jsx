@@ -31,11 +31,11 @@ function Home() {
             >
               Github Mini
             </div>
-            <h3 className="mt-5">Github sederhana </h3>
+            <h3 className="mt-5">Test case tebengan.id </h3>
             <p className="fs-5 fw-light mt-5">
               Github mini adalah web sederhana untuk mencari dan melihat
               repository dari pengguna github dan saya gunakan untuk salah satu
-              syarat tes di tebengan
+              syarat tes di tebengan.id
             </p>
             <div className="mt-5 col-lg-10">
               <input
